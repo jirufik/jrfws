@@ -16,6 +16,7 @@
 	* [Del client from group](#delclientfromgroup)
 	* [Broadcast](#broadcast)
 	* [Broadcast except client(s)](#broadcastexcept)
+* [Example](#example)
 
 ## [Installation](#installation)
 
@@ -412,3 +413,9 @@ await jrfws.broadcastExcept(nameGroup, except, data, route, act);
 | data | any | Данные любого типа |
 | route | string | Путь |
 | act | string | Действие относительно пути |
+
+### [Example](#example)
+
+ [Simplechat](https://github.com/jirufik/simplechat) is an example of using packages of **jrfws** and [jrfdb](https://github.com/jirufik/jrfdb) (odm mongodb).
+ 
+ ![chat](chat.png)
