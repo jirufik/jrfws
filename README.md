@@ -20,6 +20,7 @@
 	* [Del client from group](#delclientfromgroup)
 	* [Broadcast](#broadcast)
 	* [Broadcast except client(s)](#broadcastexcept)
+* [Get routes](#getroutes)	
 * [Example](#example)
 
 ## [Installation](#installation)
@@ -417,6 +418,29 @@ await jrfws.broadcastExcept(nameGroup, except, data, route, act);
 | data | any | Данные любого типа |
 | route | string | Путь |
 | act | string | Действие относительно пути |
+
+### [Get routes](#getroutes)
+
+Получить все routes с acts
+
+```js
+let routes = await jrfws.getRoutes();
+
+routes = [
+            {
+                route: 'users',
+                acts: [
+                    'add'
+                ]
+            },
+            {
+                route: 'users.roles',
+                acts: [
+                    'add'
+                ]
+            }
+        ];
+```
 
 ### [Example](#example)
 

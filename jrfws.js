@@ -626,4 +626,43 @@ module.exports = class JRFWS {
 
     }
 
+    async getRoutes() {
+
+        let routes = [];
+        for (let el of this._routes) {
+
+            if (!el.route) {
+                continue;
+            }
+
+            let route = {};
+            for (let elRoute of routes) {
+                if (elRoute.route === el.route) {
+                    route = elRoute;
+                    break;
+                }
+            }
+
+            if (!route.route) {
+                route.route = el.route;
+                route.acts = [];
+                routes.push(route);
+            }
+
+            if (!el.act) {
+                continue;
+            }
+
+            if (route.acts.includes(el.act)) {
+                continue;
+            }
+
+            route.acts.push(el.act);
+
+        }
+
+        return routes;
+
+    }
+
 };
