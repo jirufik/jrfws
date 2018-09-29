@@ -1854,6 +1854,60 @@ let tests = {
 
     },
 
+    async testGetRoute(key) {
+
+        ///--- head ---
+        let okay = true;
+        let compare = [
+            {
+                route: 'morty',
+                acts: [
+                    'add'
+                ]
+            },
+            {
+                route: 'rick',
+                acts: [
+                    'add'
+                ]
+            },
+            {
+                route: 'groupRickAndMorty',
+                acts: [
+                    'add',
+                    'del'
+                ]
+            },
+            {
+                route: 'groupRick',
+                acts: [
+                    'add'
+                ]
+            },
+            {
+                route: 'groupMorty',
+                acts: [
+                    'add'
+                ]
+            }
+        ];
+
+        ///--- body ---
+        let routes = await jrfwsSrv.getRoutes();
+        okay = JSON.stringify(routes) === JSON.stringify(compare);
+
+        ///--- footer ---
+
+        if (okay) {
+            glObj.countValid++;
+            return;
+        }
+
+        glObj.countInvalid++;
+        console.log(`invalid test ${key}`);
+
+    },
+
     async testReconnect(key) {
 
         ///--- head ---
