@@ -1,7 +1,7 @@
 {
   "name": "jrfws",
   "version": "1.1.0",
-  "description": "Simple async/await package for create api realtime on websockets",
+  "description": "async/await package for create api realtime on websockets",
   "main": "jrfws.js",
   "scripts": {
     "test": "node ./tests/tests.js"
@@ -18,7 +18,8 @@
     "client",
     "webclient",
     "route",
-    "routing"
+    "routing",
+    "jrf"
   ],
   "author": {
     "name": "jirufik",

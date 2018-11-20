@@ -1,6 +1,6 @@
 ﻿﻿# jrfws
 
-**jrfws** is a simple **async/await** package for creating real-time **api**, based on **websockets**. Is a wrapper over easy and fast [ws](https://www.npmjs.com/package/ws). Can work independently or in conjunction with [koa](https://www.npmjs.com/package/koa).
+**jrfws** is a **async/await** package for creating real-time **api**, based on **websockets**. Is a wrapper over easy and fast [ws](https://www.npmjs.com/package/ws). Can work independently or in conjunction with [koa](https://www.npmjs.com/package/koa).
 
 ![jrfwslogo](jrfwslogo.png)
 
@@ -27,7 +27,7 @@
 
     $ npm i jrfws --save
     
-**jrfws**  - это простой **async/await** пакет для создания **api** реального времени, на основе **websockets**. Является оберткой над легким и быстрым [ws](https://www.npmjs.com/package/ws). Может работать самостоятельно или в связке с [koa](https://www.npmjs.com/package/koa). 
+**jrfws**  - это **async/await** пакет для создания **api** реального времени, на основе **websockets**. Является оберткой над легким и быстрым [ws](https://www.npmjs.com/package/ws). Может работать самостоятельно или в связке с [koa](https://www.npmjs.com/package/koa). 
         
 ## [Start server](#startserver)
 
